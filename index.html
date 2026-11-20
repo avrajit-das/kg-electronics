@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KG Electronics | Repair, Reuse & Repower India</title>
+<meta name="description" content="KG Electronics repairs microwave, laptop, guitar, home theatre & builds custom ESP32 smart home projects across India.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">KG <span>ELECTRONICS</span><small>REUSE • REPAIR • REPOWER</small></div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <button id="langBtn" onclick="toggleLang()" style="background:#0b1512;border:1px solid #00ff88;color:#00ff88;padding:8px 14px;border-radius:999px;font-weight:800;cursor:pointer;font-size:13px">বাংলা</button>
+    <a class="call-btn" href="tel:9830873322">📞 Call</a>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="badge">⚡ PAN-INDIA • 5-7 DAYS • TESTED REPAIR • AFFORDABLE</div>
+  <h1>Reuse. Repair. Repower.<br><span class="green">Smart Repairs</span> for a <span class="blue">Sustainable India.</span></h1>
+  <div id="typing">Microwave Dead?</div>
+  <p>Don't Replace — Repair & Reuse. Save Money. Save Planet. Stay Smart.<br>Microwave • Induction • Laptop • Home Theatre • Guitar • Smart Home • LiFePO4 Battery</p>
+  <div class="hero-btns">
+    <a href="#finder" class="btn btn-green">🔧 Send Inquiry in 30 Sec →</a>
+    <a href="tel:9830873322" class="btn btn-outline">📞 98308 73322</a>
+  </div>
+  <div class="trust"><div>⚡ <b>Quick</b> Turnaround</div><div>👨‍🔧 <b>Expert</b> Technician</div><div>💰 <b>Affordable</b> Pricing</div></div>
+</section>
+<section class="finder" id="finder">
+  <h2>What Is Broken? <span>Diagnose It In 30 Seconds</span></h2>
+  <p class="sub">Just 3 clicks - get an instant estimate and send an inquiry on WhatsApp.</p>
+  <div class="steps"><div class="dot active" id="d1">1</div><div class="dot" id="d2">2</div><div class="dot" id="d3">3</div></div>
+  <div id="step1"><div class="grid" id="deviceGrid"></div></div>
+  <div id="step2" style="display:none"><div class="grid" id="issueGrid"></div><center><button class="back" onclick="goStep(1)">← Back</button></center></div>
+  <div id="step3" style="display:none">
+    <div class="result"><h3 id="resTitle">✅ Diagnosis Ready</h3><p id="resDesc"></p><p><b>⏱ Estimated Time:</b> <span id="resTime"></span><br><b>💰 Estimated Cost:</b> <span id="resCost"></span></p><a id="waLink" class="wa-btn" target="_blank" href="#">💬 Send Inquiry on WhatsApp - 94327 35009</a><a class="call2" href="tel:9830873322">Or Call Urgent: 98308 73322 📞</a></div>
+    <center><button class="back" onclick="goStep(2)">← Change Problem</button></center>
+  </div>
+</section>
+<section class="section">
+  <h2 class="sec-title">Our Repair And Custom Build Services Across India</h2>
+  <p class="sec-sub">Tap a card to see details.</p>
+  <div class="svc-grid">
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">♨️</div><h3>Microwave & Induction Cooktop Repair</h3><small>Repair & Service</small><div class="svc-more">Not Heating • Sparking • Display Error<br>⏱ Quick Service • 💰 Affordable<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about Microwave / Induction repair." target="_blank">Send Inquiry →</a></div></div>
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">💻</div><h3>Laptop, PC & Motherboard Repair</h3><small>PC • Laptop • Hardware</small><div class="svc-more">Not Booting • Screen • Battery • Upgrade<br>⏱ 5-7 Days • Tested<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about Laptop / PC repair." target="_blank">Send Inquiry →</a></div></div>
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">🎸</div><h3>Guitar, Keyboard, Amp & Speaker Repair</h3><small>Musical Instruments</small><div class="svc-more">No Sound • Pickup • Jack • Speaker<br>⏱ Expert Service<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about Musical instrument repair." target="_blank">Send Inquiry →</a></div></div>
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">🔊</div><h3>Home Theatre Customization & Repair</h3><small>New Setup / Old Repair</small><div class="svc-more">Customize New • Repair Old • Bluetooth<br>⏱ Custom Quote<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about Home Theatre setup / repair." target="_blank">Send Inquiry →</a></div></div>
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">🏠</div><h3>Smart Automation & Custom ESP32 Projects</h3><small>ESP32 • Arduino • IoT • PCB</small><div class="svc-more">Sensors • Relay • Smart Home • Custom PCB<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about a Smart Home custom project." target="_blank">Start Project →</a></div></div>
+    <div class="svc" onclick="this.classList.toggle('open')"><div class="big">🔋</div><h3>LiFePO4 Battery & Solar Electronics</h3><small>Battery • BMS • Solar</small><div class="svc-more">BMS Issue • Battery Repair • Solar PCB<br><a href="https://wa.me/919432735009?text=Hello! I want to inquire about LiFePO4 / Solar repair." target="_blank">Send Inquiry →</a></div></div>
+  </div>
+  <div class="smart-box">
+    <h2>Smart Home <span class="blue">Playground</span> 🏠</h2>
+    <p class="sec-sub">Try it out - we can build this kind of automation for your home too.<br>ESP32 • Arduino • IoT • Sensors • PCB</p>
+    <div class="room"><div id="room">🌑</div><p id="roomText">Light OFF • Fan OFF</p><div class="smart-btns"><button onclick="toggleSmart('light')" id="lightBtn">💡 Light OFF</button><button onclick="toggleSmart('fan')" id="fanBtn">🌀 Fan OFF</button><button onclick="toggleSmart('sensor')" id="sensorBtn">📡 Sensor OFF</button></div><p class="live">LIVE DEMO • ESP8266 / ESP32 Powered</p></div>
+    <a href="https://wa.me/919432735009?text=Hello! I want to inquire about a Smart Home custom project." target="_blank" class="btn btn-blue">Get My Custom Smart Home Project →</a>
+  </div>
+  <h2 class="sec-title">Why India Chooses Repair Over Replacement</h2>
+  <div class="ba-box" id="baBox"><div class="ba-before"><div><div class="big">💔📺</div><b>BROKEN</b><br><small>No Sound • No Power • Dead</small></div></div><div class="ba-after" id="baAfter"><div><div class="big">✨🔊</div><b>FIXED!</b><br><small>Like New • Repowered</small></div></div><div class="ba-handle" id="baHandle"><div>↔</div></div></div>
+  <p class="hint">Drag the slider left to right 👆</p>
+  <div class="stats"><div><div class="big">⚡</div><b>5-7 Days Delivery</b><br><small>Repair + 2 Days Testing</small></div><div><div class="big">👨‍🔧</div><b>Expert Technician</b><br><small>Trusted Repairs</small></div><div><div class="big">💰</div><b>Affordable Pricing</b><br><small>Transparent Estimate</small></div></div>
+  <h2 class="sec-title">Safe Pan-India Shipping & Packaging Process</h2>
+  <div style="background:#0b1512;padding:18px;border-radius:18px;line-height:1.8;font-size:14px;color:#c8fff0"><b>1. Send Inquiry on WhatsApp</b> - 94327 35009<br><b>2. Pack Safely</b> - Bubble wrap + double box + fragile mark<br><b>3. Courier With Tracking</b> - Share tracking with us<br><b>4. We Inspect & Confirm</b> - Final quote before repair starts</div>
+</section>
+<section class="section">
+  <h2 class="sec-title">Frequently Asked Questions</h2>
+  <div class="faq">
+    <details><summary>How much will my repair cost?</summary><p>You get an estimate range first. After inspection, we confirm final price on WhatsApp before starting work.</p></details>
+    <details><summary>Do you use genuine components?</summary><p>We use quality-tested components suited to your device and budget.</p></details>
+    <details><summary>Is my device and data safe?</summary><p>Yes. We do not access personal data, and we recommend backup before sending laptop/PC.</p></details>
+    <details><summary>How do I send my device from another city?</summary><p>Send inquiry on WhatsApp, pack as per guide, courier with tracking.</p></details>
+    <details><summary>Why does delivery take 5-7 days?</summary><p>After repair, we test your device continuously for minimum 2 days to ensure problem is fully fixed. Total process takes 5-7 days.</p></details>
+    <details><summary>Can I share my review?</summary><p>Yes. Scroll to Customer Reviews, give 1 to 5 stars and share honest feedback.</p></details>
+  </div>
+</section>
+<section class="section" id="reviews">
+  <h2 class="sec-title">Customer Reviews & Ratings</h2>
+  <p class="sec-sub">Real feedback from our customers across India.</p>
+  <div class="rating-summary"><div class="avg-big"><span id="avgRating">5.0</span> ⭐</div><div><div id="avgStars" style="font-size:22px;color:#ffcc00">★★★★★</div><p style="color:#9aa8a2;font-size:13px;margin-top:4px"><span id="totalReviews">0</span> Reviews • Verified Customers</p></div></div>
+  <div class="review-form">
+    <h3 style="font-size:18px;margin-bottom:12px">Share Your Experience</h3>
+    <input type="text" id="revName" placeholder="Your Name *">
+    <select id="revDevice"><option value="General Service">General Service</option><option>Microwave</option><option>Induction Oven</option><option>Laptop</option><option>Desktop PC</option><option>Guitar</option><option>Keyboard / Amp</option><option>Home Theatre</option><option>Smart Home Project</option><option>LiFePO4 / Solar</option></select>
+    <div style="margin:6px 0 12px"><p style="font-size:14px;color:#9aa8a2;margin-bottom:6px">Your Rating:</p><div id="starInput" style="font-size:32px;cursor:pointer;letter-spacing:4px"><span onclick="setRating(1)">☆</span><span onclick="setRating(2)">☆</span><span onclick="setRating(3)">☆</span><span onclick="setRating(4)">☆</span><span onclick="setRating(5)">☆</span></div></div>
+    <textarea id="revText" placeholder="How was your repair experience?" rows="3"></textarea>
+    <button onclick="submitReview()" class="wa-btn">⭐ Submit Review</button>
+  </div>
+  <div id="reviewsList" style="margin-top:20px"><p style="text-align:center;color:#888">Loading reviews...</p></div>
+  <div style="text-align:center;margin-top:20px"><button onclick="openAdminPanel()" style="background:#111f1a;border:1px solid #333;color:#fff;padding:10px 22px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:700">🔐 Admin Panel</button><p id="adminStatus" style="font-size:12px;color:#00ff88;margin-top:6px;display:none">✅ Admin Mode ON</p></div>
+</section>
+<div id="adminModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;align-items:center;justify-content:center;padding:18px">
+  <div style="background:#0b1512;border:1px solid #00ff88;width:100%;max-width:420px;border-radius:20px;padding:22px;position:relative">
+    <button onclick="closeAdminPanel()" style="position:absolute;top:12px;right:14px;background:none;border:none;color:#fff;font-size:20px;cursor:pointer">✕</button>
+    <div id="adminLoginBox"><h3 style="font-size:20px">🔐 Admin Login</h3><p style="color:#9aa8a2;font-size:13px;margin:6px 0 14px">Only KG Electronics admin can access.</p><input type="text" id="adminNameInput" placeholder="Admin Name *"><input type="email" id="adminEmailInput" placeholder="Admin Email *"><input type="password" id="adminPassInput" placeholder="Login Password *"><button onclick="adminLoginCheck()" class="wa-btn">Login to Admin Panel</button></div>
+    <div id="adminDashboard" style="display:none"><h3 style="font-size:20px">👋 Welcome, <span id="adminDisplayName" style="color:#00ff88"></span></h3><p style="color:#9aa8a2;font-size:13px;margin:6px 0 14px">Email: <span id="adminDisplayEmail"></span><br>Total Reviews: <b id="adminTotalReviews" style="color:#fff"></b> • Avg Rating: <b id="adminAvgRating" style="color:#ffcc00"></b></p><div style="background:#050807;border-radius:12px;padding:12px;max-height:220px;overflow-y:auto" id="adminReviewList"></div><button onclick="adminLogout()" style="width:100%;background:#ff4444;color:#fff;border:none;padding:12px;border-radius:999px;font-weight:800;cursor:pointer;margin-top:14px">Logout</button></div>
+  </div>
+</div>
+<section class="finder" id="inquiry">
+  <h2>Start Your Repair Or Custom Project Today</h2>
+  <p class="sub">Fill the form - it will open directly in WhatsApp (94327 35009)</p>
+  <form id="inquiryForm"><input type="text" id="custName" placeholder="Your Name *" required><input type="tel" id="custPhone" placeholder="Your Phone Number *" required><select id="custDevice" required><option value="">Select Device *</option><option>Microwave</option><option>Induction Oven</option><option>Laptop</option><option>Desktop PC</option><option>Guitar</option><option>Keyboard / Amp</option><option>Home Theatre</option><option>Smart Home Project</option><option>LiFePO4 / Solar</option><option>Other</option></select><textarea id="custProblem" placeholder="What is the problem? Please describe in detail..." rows="3" required></textarea><button type="submit" class="wa-btn">💬 Send Inquiry on WhatsApp</button></form>
+  <p style="text-align:center;font-size:13px;color:#9aa8a2;margin-top:12px">Urgent? Call directly: <a href="tel:9830873322" style="color:#00c2ff;font-weight:800">98308 73322</a></p>
+</section>
+</main>
+<footer><b>KG ELECTRONICS</b><br>📞 Call: 9830873322 &nbsp; | &nbsp; 💬 WhatsApp / Inquiry: 9432735009<br>Don't Replace — Repair & Reuse ♻️</footer>
+<script src="script.js"></script>
+</body>
+</html>
